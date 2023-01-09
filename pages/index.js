@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import Project from './project'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,12 +19,12 @@ export default function Home({data}) {
         <div style={{display:"flex", gap:"20px", marginTop:"10px",}}>
           <Link href="https://drive.google.com/file/d/1Kn0iGcxuQb-Fe8ZyWxbqb9UP33vyNutV/view?usp=share_link">
 
-          <button style={{fontSize:"15px", padding:"8px", backgroundColor:"blue"}}>Resume</button>
+          <button style={{fontSize:"15px", padding:"8px", backgroundColor:"blue", borderRadius:"50px"}}>Resume</button>
           </Link>
          
            <Link href={data.html_url}>
                     
-           <button style={{fontSize:"15px", padding:"8px", backgroundColor:"blue"}}>Follow</button>
+           <button style={{fontSize:"15px", padding:"8px", backgroundColor:"blue",borderRadius:"50px"}}>Follow</button>
             </Link>
           
         </div>
@@ -50,15 +50,14 @@ export default function Home({data}) {
 
         </div>
 
-       
-      
-
+    
     </>
     
   )
 
 
 }
+
 
 
 
